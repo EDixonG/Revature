@@ -30,7 +30,6 @@
         <profile>Admin</profile>
         <profile>Acquisition Manager</profile>
         <profile>standard</profile>
-        <profile>read only</profile>
         <profile>Manager</profile>
     </networkMemberGroups>
     <networkPageOverrides>
