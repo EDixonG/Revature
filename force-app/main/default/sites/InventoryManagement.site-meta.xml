@@ -22,8 +22,8 @@
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>dekariandragon@empathetic-impala-6ceb6q.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>dekariandragon@empathetic-impala-6ceb6q.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>jonathan.neilan@creative-unicorn-uympg8.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>jonathan.neilan@creative-unicorn-uympg8.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <subdomain>inventorymanagement-developer-edition</subdomain>
 </CustomSite>
