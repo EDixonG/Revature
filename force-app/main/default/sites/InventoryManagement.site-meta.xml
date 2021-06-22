@@ -22,8 +22,8 @@
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>pattonj1272@outlook.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>pattonj1272@outlook.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>dekariandragon@empathetic-impala-6ceb6q.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>dekariandragon@empathetic-impala-6ceb6q.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <subdomain>inventorymanagement-developer-edition</subdomain>
 </CustomSite>
