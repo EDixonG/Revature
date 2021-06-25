@@ -1,26 +1,26 @@
 {
   "appPageId" : "c61c230a-f4b9-4a1a-ad22-6799643998e2",
   "componentName" : "siteforce:sldsOneColLayout",
-  "id" : "1edf959a-bfdd-4414-aded-186b9a5b935e",
-  "label" : "Account Management",
+  "id" : "96250c03-79f6-4bfd-b674-84c23652b002",
+  "label" : "Order List page",
   "regions" : [ {
-    "id" : "a0e00267-d8dc-4cda-b8ca-6a03f3daa71c",
-    "regionName" : "header",
-    "type" : "region"
-  }, {
-    "id" : "92d03757-011d-41e7-97ea-34598396bce0",
-    "regionName" : "content",
-    "type" : "region"
-  }, {
     "components" : [ {
       "componentAttributes" : { },
       "componentName" : "c:OrderListComponent",
-      "id" : "bf7eb0dc-e481-4171-9b8d-8ed2cf525d76",
+      "id" : "d5d3a0b8-50b4-4173-b3da-3bb61842c570",
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "c6f75006-dd86-4a23-bf39-06f19260ed32",
+    "id" : "9cb15ea8-8c65-480a-be8a-592e4225357d",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "c91d336b-4ec2-415a-8d99-84e4c9f76720",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8c075478-6142-4f43-8c7c-ccf6fd25eb83",
     "regionName" : "footer",
     "type" : "region"
   }, {
@@ -28,18 +28,18 @@
       "componentAttributes" : {
         "customHeadTags" : "",
         "description" : "",
-        "title" : "Account Management"
+        "title" : "Order List page"
       },
       "componentName" : "forceCommunity:seoAssistant",
-      "id" : "582e71f9-1a7b-4217-b6a6-b844689a20ce",
+      "id" : "ac4200f6-56dc-40bf-b0d8-a562fccb530e",
       "renditionMap" : { },
       "type" : "component"
     } ],
-    "id" : "5b5e8451-f0ab-4149-bf73-cb4d1747424e",
+    "id" : "1d9d1831-069e-4f13-9440-bf96532cac9e",
     "regionName" : "sfdcHiddenRegion",
     "type" : "region"
   } ],
   "themeLayoutType" : "Inner",
   "type" : "view",
-  "viewType" : "account-management"
+  "viewType" : "custom-order-list-page"
 }

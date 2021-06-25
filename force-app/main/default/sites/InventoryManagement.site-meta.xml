@@ -22,8 +22,8 @@
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>dekariandragon@empathetic-impala-6ceb6q.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>dekariandragon@empathetic-impala-6ceb6q.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>kennygonzalez10@mindful-wolf-exewqs.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>kennygonzalez10@mindful-wolf-exewqs.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
-    <subdomain>inventorymanagement-developer-edition</subdomain>
+    <subdomain>proj2test-developer-edition</subdomain>
 </CustomSite>

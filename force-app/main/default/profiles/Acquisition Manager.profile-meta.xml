@@ -114,6 +114,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>OrderController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ProductClass</apexClass>
         <enabled>false</enabled>
     </classAccesses>

@@ -1,0 +1,36 @@
+<aura:component implements="force:appHostable,forceCommunity:availableForAllPageTypes" access="global" controller="OrderController">
+    
+  
+    <aura:attribute name="orders" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!-- <div class="container">-->
+    <div class="slds"> 
+
+    <table class="slds-table slds-table--bordered slds-table--striped">
+        <thead>
+            <tr>
+                <th scope="col"><span class="slds-truncate">Order ID</span></th>
+                <th scope="col"><span class="slds-truncate">Approved</span></th>
+                <th scope="col"><span class="slds-truncate">Order Status</span></th>
+                <th scope="col"><span class="slds-truncate">Product</span></th>
+                <th scope="col"><span class="slds-truncate">Quantity</span></th>
+                <th scope="col"><span class="slds-truncate">Estimated Receive Date Start</span></th>
+                <th scope="col"><span class="slds-truncate">Estimated Receive Date End</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.orders}" var="order">
+                <tr>
+                    <td>{!order.Id}</td>
+                    <td>{!order.Approved__c}</td>
+                    <td>{!order.Order_Status__c}</td>
+                    <td>{!order.Product2__r.Name}</td>
+                    <td>{!order.Quantity__c}</td>
+                    <td>{!order.Estimated_Recieve_Date_Start__c}</td>
+                    <td>{!order.Estimated_Recieve_Date_End__c}</td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+        </div>
+</aura:component>
