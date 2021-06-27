@@ -11,5 +11,20 @@
         });
         $A.enqueueAction(getOrders);
 		
-	}
+	},
+    
+    detailView : function(component, event, helper) {
+        
+       component.set("v.displayButton", false);
+       component.set("v.displayForm", true);
+		
+	},
+    
+    closeView : function(component, event, helper) {
+        
+       component.set("v.displayButton", true);
+       component.set("v.displayForm", false);
+		
+	}    
+ 
 })

@@ -1,4 +1,6 @@
-public with sharing class OrderController {
+public without sharing class OrderController {
+    
+    static String id;
     
     @AuraEnabled
     public static List<Custom_Order__c> getOrders() {
@@ -37,23 +39,24 @@ public with sharing class OrderController {
             insert products;
             
              //If Custom_Order has records it will delete them, that way we can start with a fresh batch as dummy data
-            List<Custom_Order__c> deleteCurrent2 = [SELECT Id FROM Custom_Order__c];
-            if(!(deleteCurrent2 == null)){
+           List<Custom_Order__c> deleteCurrent2 = [SELECT Name FROM Custom_Order__c];
+           if(!(deleteCurrent2 == null)){
             	delete deleteCurrent2;
-             }
+            }
             
-            //creating Custom_Order__c records as dummy data
+            //creating Custom_Order__c records as dummy dat
             List<Custom_Order__c> orders = new List<Custom_Order__c>();
             Boolean checkboxVal = false;
-            for(Integer i = 0; i < 10; i++){
+            for(Product2 p:products){
   
-                order = new Custom_Order__c(Product2__c = products[i].Id, Approved__c = checkboxVal, Order_Status__c = 'pending',Quantity__c = 500,
-                                            Estimated_Recieve_Date_Start__c = System.now(), Estimated_Recieve_Date_End__c = System.now() + 15);
+                order = new Custom_Order__c(Product2__c = p.Id, Approved__c = checkboxVal, Order_Status__c = 'pending',Quantity__c = 500,
+                                            Estimated_Recieve_Date_Start__c = System.now()+5, Estimated_Recieve_Date_End__c = System.now() + 15);
                 
                 orders.add(order);
                 checkboxVal = !checkboxVal;
                
             }
+           
             
             
             insert orders;
@@ -62,7 +65,8 @@ public with sharing class OrderController {
             
        
             
-            List<Custom_Order__c> newOrders = [SELECT Id, Approved__c, Order_Status__c, Product2__r.Name, Quantity__c,Estimated_Recieve_Date_Start__c,Estimated_Recieve_Date_End__c FROM Custom_Order__c];
+            List<Custom_Order__c> newOrders = [SELECT Id, Approved__c, Order_Status__c, Product2__r.Name, 
+                                               Quantity__c, Estimated_Recieve_Date_Start__c,Estimated_Recieve_Date_End__c FROM Custom_Order__c];
             return newOrders;
             
         }
@@ -70,6 +74,12 @@ public with sharing class OrderController {
             
             throw new AuraHandledException(e.getMessage());
         }
+    }
+    
+    @AuraEnabled
+    public static String getId(String orderId){
+        id = orderId;
+        return id;
     }
     
 

@@ -118,10 +118,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ProductClass</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>ProductController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
