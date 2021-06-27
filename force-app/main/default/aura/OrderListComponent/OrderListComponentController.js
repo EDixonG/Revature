@@ -17,6 +17,7 @@
         
        component.set("v.displayButton", false);
        component.set("v.displayForm", true);
+       component.set("v.displayButton2", true);
 		
 	},
     
@@ -24,6 +25,7 @@
         
        component.set("v.displayButton", true);
        component.set("v.displayForm", false);
+       component.set("v.displayButton2", false);
 		
 	}    
  

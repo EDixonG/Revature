@@ -3,6 +3,7 @@
   
     <aura:attribute name="orders" type="List" />
     <aura:attribute name="displayButton" type="Boolean" default="true"/>
+    <aura:attribute name="displayButton2" type="Boolean" default="false"/>
     <aura:attribute name="displayForm" type="Boolean" default="false"/>
     <aura:attribute name="orderId" type="String"/>
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
@@ -21,8 +22,14 @@
                     <th scope="col"><span class="slds-truncate">Estimated Receive Date End</span></th>
                     <th scope="col"><span class="slds-truncate">
                         <aura:if isTrue="{!v.displayButton}">
-                            <td> <lightning:button aura:id="submitbutton" type="Submit" label="Detail View" onclick="{!c.detailView}"/></td>
-                        </aura:if></span>
+                            <lightning:button aura:id="submitbutton" type="Submit" label="Detail View" onclick="{!c.detailView}"/>
+                        </aura:if>
+                        <aura:if isTrue="{!v.displayButton2}">
+                            <lightning:button aura:id="submitbutton" type="Submit" label="Close" onclick="{!c.closeView}"/>
+                        </aura:if>
+                        </span>
+                        
+                        
                     </th>
                 </tr>
             </thead>
@@ -51,7 +58,6 @@
                                 <lightning:outputField fieldName="Tracking_Reference__c"/>
                                 <lightning:outputField fieldName="Delivery_Date__c"/>
                             </lightning:recordViewForm>
-                            <lightning:button aura:id="submitbutton" type="Submit" label="Close" onclick="{!c.closeView}"/>
                            </div>
                        </tr>
                         
