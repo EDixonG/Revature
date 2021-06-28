@@ -1,0 +1,9 @@
+<apex:page >
+    <div align="center">
+    
+        <h1>
+            <font style="font-family: Helvetica; font-size: 65px">Thank You for submitting a new Case</font>
+        </h1>
+    
+    </div> 
+</apex:page>

@@ -1,0 +1,89 @@
+<aura:component implements="force:appHostable,forceCommunity:availableForAllPageTypes" access="global">
+    
+        <head><META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8"/></head>
+   
+        <lightning:tabset selectedTabId="one">
+            <lightning:tab label="Home" id="one">
+                <c:Calendar/>
+            </lightning:tab>
+            <lightning:tab label="Order List" id="two">
+                <c:OrderListComponent/>
+            </lightning:tab>
+            <lightning:tab label="Supply Orders" id="three">
+                Supply Order Component Goes Here
+            </lightning:tab>
+            <lightning:tab label="Products" id="four">
+                Product Component Goes Here!
+            </lightning:tab>
+            <div style="background-color: #87CEFA;  border-radius: 25px;" align="center">
+                <lightning:tab label="Contact Us" id="five">
+                    
+                    <h1 style="color: white; text-align: center; font-family: Helvetica; font-size: 50px"><b>Contact Us</b></h1>
+                    <br/>
+                    <br/>
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+                    
+                         <input type="hidden" name="retURL" value="https://mindful-wolf-exewqs-dev-ed.preview.salesforce-communities.com/s/"/>
+      
+                    
+                        <table style="width: 20%">
+                          <tr>
+                             <td style="text-align: right">
+                               <label for="name">Contact Name: </label>
+                             </td> 
+                             <td style="text-align: right">
+                                <input  id="name" maxlength="80" name="name" size="20" type="text" />
+                              </td>
+                          </tr>
+                          <tr><br/></tr>
+                          <tr>
+                              <td style="text-align: right">
+                                <label for="email">Email: </label>
+                              </td>
+                              <td style="text-align: right">
+                                 <input  id="email" maxlength="80" name="email" size="20" type="text" />
+                              </td>
+                          </tr>
+                          <tr><br/></tr>
+                          <tr>
+                             <td style="text-align: right">
+                               <label for="phone">Phone: </label>
+                             </td>   
+                             <td style="text-align: right">
+                               <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+                             </td> 
+                          </tr>
+                          <tr><br/></tr>
+                          <tr>
+                             <td style="text-align: right">
+                               <label for="subject">Subject: </label>
+                             </td>
+                             <td style="text-align: right">
+                               <input  id="subject" maxlength="80" name="subject" size="20" type="text" />
+                             </td>
+                          </tr>
+                          <tr><br/></tr>
+                          <tr>
+                            <td style="text-align: right">
+                              <label for="description">Description: </label>
+                            </td>
+                            <td style="text-align: right">
+                              <textarea name="description"></textarea>
+                            </td>
+                          </tr>
+                        </table>
+                        <br/>
+                        <table>
+                            <tr  style="text-align: center">
+                               <lightning:button aura:id="submitbutton" type="Submit" label="Submit" onclick="{!c.updateMessage}"/>
+                                <lightning:notificationsLibrary aura:id="updatedMessage"/>                  
+                          </tr>
+                        </table>                        
+                        
+                    
+                    </form>
+                </lightning:tab>
+            </div>
+        </lightning:tabset>
+   
+</aura:component>

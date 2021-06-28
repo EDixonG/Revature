@@ -20,10 +20,12 @@
         <members>*</members>
         <name>ApexTestSuite</name>
     </types>
+    <!--
     <types>
         <members>*</members>
         <name>ApexTrigger</name>
     </types>
+    -->
     <types>
         <members>*</members>
         <name>AuraDefinitionBundle</name>

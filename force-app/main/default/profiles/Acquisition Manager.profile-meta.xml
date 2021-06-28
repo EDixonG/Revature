@@ -10,6 +10,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CalendarController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ChangePasswordController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -449,6 +453,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>SupplyOrdersPage</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ThankYouPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
