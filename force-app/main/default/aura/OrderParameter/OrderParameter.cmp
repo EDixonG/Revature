@@ -1,5 +1,0 @@
-<aura:component controller="OrderController">
-     <aura:attribute name="orderId" type="String"/>
-    <c:OrderListComponent setOrderId="{!v.orderId}"/>
-     <lightning:button aura:id="submitbutton" type="Submit" label="Detail View" onclick="{!c.detailView}"/>
-</aura:component>

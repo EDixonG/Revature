@@ -76,11 +76,7 @@ public without sharing class OrderController {
         }
     }
     
-    @AuraEnabled
-    public static String getId(String orderId){
-        id = orderId;
-        return id;
-    }
+   
     
 
 }

@@ -25,7 +25,7 @@
                             <lightning:button aura:id="submitbutton" type="Submit" label="Detail View" onclick="{!c.detailView}"/>
                         </aura:if>
                         <aura:if isTrue="{!v.displayButton2}">
-                            <lightning:button aura:id="submitbutton" type="Submit" label="Close" onclick="{!c.closeView}"/>
+                            <lightning:button aura:id="submitbutton" type="Submit" label="Standard View" onclick="{!c.closeView}"/>
                         </aura:if>
                         </span>
                         
