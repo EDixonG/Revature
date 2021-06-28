@@ -4,6 +4,7 @@ public class NewOrderFormController {
     public static List<SelectOptionAE> getOptions(){
         
         List<SelectOptionAE> options = new List<SelectOptionAE>();
+        options.add(new SelectOptionAE('None', 'Product'));
         
         for(Product2 product : [SELECT Name, Id FROM Product2]){
             options.add(new SelectOptionAE(product.Id, product.Name));
@@ -20,7 +21,7 @@ public class NewOrderFormController {
         
         order.RecordTypeId = Schema.SObjectType.Custom_Order__c.getRecordTypeInfosByName().get('Outbound Order').getRecordTypeId();
         order.Order_Status__c = 'pending';
-        order.Contact__c = [SELECT Name FROM Contact WHERE Name =: UserInfo.getName() LIMIT 1].id;
+        //order.Contact__c = [SELECT Name FROM Contact WHERE Name =: UserInfo.getName() LIMIT 1].id;
       
         try{
             Database.SaveResult success = Database.insert(order);
