@@ -1,10 +1,17 @@
 public with sharing class CalanderClass {
+    @AuraEnabled
     public List<String> Sunday{get;set;}
+    @AuraEnabled
 	public List<String> Monday{get;set;}
+    @AuraEnabled
     public List<String> Tuesday{get;set;}
+    @AuraEnabled
     public List<String> Wednesday{get;set;}
+    @AuraEnabled
     public List<String> Thursday{get;set;}
+    @AuraEnabled
     public List<String> Friday{get;set;}
+    @AuraEnabled
     public List<String> Saturday{get;set;}
     
     public CalanderClass(Integer yearToView, Integer monthToView){
@@ -17,7 +24,7 @@ public with sharing class CalanderClass {
         Saturday = new List<String>();
         getWeekValues(yearToView, monthToView);
     }
-    
+
 	public void getWeekValues(Integer yearToView, Integer monthToView){
         List<Event> events = [SELECT WhatId, StartDateTime, ActivityDateTime, EndDateTime, OwnerId FROM Event];
         
@@ -72,7 +79,7 @@ public with sharing class CalanderClass {
             
         }
         public String getEventsForDay(Date dateToView, List<Event> events){
-            String stringToAdd = ((DateTime)dateToView).format('d') + ' ';
+            String stringToAdd = ((DateTime)dateToView).format('d') + '\n';
             for (Event eventToAdd : events){
                 
                 if (date.newinstance(eventToAdd.StartDateTime.year(), eventToAdd.StartDateTime.month(), eventToAdd.StartDateTime.day()) == dateToView) {
@@ -85,7 +92,7 @@ public with sharing class CalanderClass {
                     stringToAdd += 'Order: ' + eventToAdd.WhatId + ' Estimated End: ' + eventToAdd.ActivityDateTime.format('H:m');
                 }
             }
-            System.debug(stringToAdd + 'bob');
+            //System.debug(stringToAdd + 'bob');
             return stringToAdd;
         }
 }

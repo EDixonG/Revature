@@ -1,3 +1,79 @@
-<aura:component>
+<aura:component controller="EventCalanderController" implements="forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="eventList" type="CalanderClass"/>
+    <aura:attribute name="currentMonth" type="Integer"/>
+    <aura:attribute name="currentYear" type="Integer"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
+    <!--lightning:card class="slds-theme_default slds-text-align_center">
+        <lightning:formattedText class="slds-text-heading_medium" value="{!v.month}"/>
+    </lightning:card-->
+        <lightning:layout horizontalAlign="space" class="c-container slds-grid">
+            <lightning:layoutItem class="slds-col slds-size_1-of-7">
+                <div class="custom-box">Sunday</div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Sunday[0]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Sunday[1]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Sunday[2]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Sunday[3]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Sunday[4]}"/></div>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem class="slds-col slds-size_1-of-7">
+                <div class="custom-box">Monday</div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Monday[0]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Monday[1]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Monday[2]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Monday[3]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Monday[4]}"/></div>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem class="slds-col slds-size_1-of-7">
+                <div class="custom-box">Tuesday</div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Tuesday[0]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Tuesday[1]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Tuesday[2]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Tuesday[3]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Tuesday[4]}"/></div>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem class="slds-col slds-size_1-of-7">
+                <div class="custom-box">Wednesday</div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Wednesday[0]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Wednesday[1]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Wednesday[2]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Wednesday[3]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Wednesday[4]}"/></div>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem class="slds-col slds-size_1-of-7">
+                <div class="custom-box">Thrusday</div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Thursday[0]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Thursday[1]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Thursday[2]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Thursday[3]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Thursday[4]}"/></div>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem class="slds-col slds-size_1-of-7">
+                <div class="custom-box">Friday</div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Friday[0]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Friday[1]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Friday[2]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Friday[3]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Friday[4]}"/></div>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem class="slds-col slds-size_1-of-7">
+                <div class="custom-box">Saturday</div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Saturday[0]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Saturday[1]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Saturday[2]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Saturday[3]}"/></div>
+                <div class="custom-box-2"><lightning:formattedText value="{!v.eventList.Saturday[4]}"/></div>
+            </lightning:layoutItem>
+        </lightning:layout>
+            <lightning:card variant="Narrow" title="Select Month to View" class="slds-size_small slds-theme_default slds-text-align_center slds-container_center">
+                <lightning:input placeholder="{!v.currentMonth}" type="number" aura:id="monthInput" label="Enter Month to View"/>
+                <lightning:input placeholder="{!v.currentYear}" type="number" aura:id="yearInput" label="Enter Year to View"/>
+                <lightning:button label="Update Calendar" onclick="{!c.handleCalendarButton}"/>
+            </lightning:card>
 </aura:component>	

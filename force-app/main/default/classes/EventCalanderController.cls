@@ -9,7 +9,8 @@ public class EventCalanderController {
         //causes page refresh
         
     }
-    public Integer yearToView{
+    @AuraEnabled
+    public static Integer yearToView{
         get {
             if (yearToView == null){
                 DateTime tmp = System.now();
@@ -18,7 +19,8 @@ public class EventCalanderController {
             return yearToView;
         } set;
     }
-    public Integer monthToView{
+    @AuraEnabled
+    public static Integer monthToView{
         get {
             if (monthToView == null){
                 DateTime tmp = System.now();
@@ -27,12 +29,14 @@ public class EventCalanderController {
             return monthToView;
         } set;
     }
-    public CalanderClass eventList{ 
-        get {
+    @AuraEnabled
+    public static CalanderClass getEventList(){ 
             CalanderClass Calander = new CalanderClass(yearToView, monthToView);
             return Calander;
-        } set;
     }
-
-    
+    @AuraEnabled
+    public static CalanderClass getEventListRefresh(Integer monthToView, Integer yearToView){ 
+            CalanderClass Calander = new CalanderClass(yearToView, monthToView);
+            return Calander;
     }
+}
