@@ -101,14 +101,14 @@
         <members>*</members>
         <name>Network</name>
     </types>
-    <types>
+    <!--<types>
         <members>*</members>
         <name>CustomSite</name>
     </types>
     <types>
         <members>*</members>
         <name>ExperienceBundle</name>
-    </types>
+    </types>-->
     <types>
         <members>*</members>
         <name>CustomTab</name>

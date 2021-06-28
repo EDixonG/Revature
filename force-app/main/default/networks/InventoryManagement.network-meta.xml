@@ -5,12 +5,12 @@
     <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
     <communityRoles/>
     <disableReputationRecordConversations>true</disableReputationRecordConversations>
-    <emailSenderAddress>pattonj1272@outlook.com</emailSenderAddress>
+    <emailSenderAddress>melty100@gmail.com</emailSenderAddress>
     <emailSenderName>InventoryManagement</emailSenderName>
     <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
     <enableDirectMessages>true</enableDirectMessages>
     <enableGuestChatter>false</enableGuestChatter>
-    <enableGuestFileAccess>true</enableGuestFileAccess>
+    <enableGuestFileAccess>false</enableGuestFileAccess>
     <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
     <enableInvitation>false</enableInvitation>
     <enableKnowledgeable>false</enableKnowledgeable>
@@ -28,10 +28,6 @@
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
     <networkMemberGroups>
         <profile>Admin</profile>
-        <profile>Acquisition Manager</profile>
-        <profile>standard</profile>
-        <profile>read only</profile>
-        <profile>Manager</profile>
     </networkMemberGroups>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
@@ -41,13 +37,14 @@
         <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
     </networkPageOverrides>
     <picassoSite>InventoryManagement1</picassoSite>
-    <selfRegistration>true</selfRegistration>
+    <selfRegistration>false</selfRegistration>
     <sendWelcomeEmail>true</sendWelcomeEmail>
     <site>InventoryManagement</site>
-    <status>Live</status>
+    <status>UnderConstruction</status>
     <tabs>
         <defaultTab>home</defaultTab>
         <standardTab>Chatter</standardTab>
     </tabs>
+    <urlPathPrefix>welcome</urlPathPrefix>
     <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
 </Network>

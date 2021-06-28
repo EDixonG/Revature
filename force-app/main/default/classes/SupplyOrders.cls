@@ -62,7 +62,7 @@ public class SupplyOrders {
         Id RecordTypeId = Schema.SObjectType.Custom_Order__c.getRecordTypeInfosByName().get('Inbound Order').getRecordTypeId();
         order.RecordTypeId = RecordTypeId;
         order.Product2__c = selectedProduct;
-        order.Contact__c = selectedContact;
+        order.Contact__c = [SELECT Name FROM Contact WHERE Name =: UserInfo.getName() LIMIT 1].id;
         try{
         	order.Order_Price__c = [SELECT Pricebook2Id FROM PricebookEntry WHERE Product2Id =:selectedProduct LIMIT 1].Pricebook2Id;
         }

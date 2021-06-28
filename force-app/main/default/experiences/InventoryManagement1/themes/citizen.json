@@ -83,7 +83,7 @@
               "buttonText" : "Log in",
               "buttonTextColor" : "",
               "buttonTextHoverColor" : "",
-              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu",
+              "customizableUserProfileMenuEditor" : "",
               "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconOnly\",\"selectedIconSetting\":\"userAvatar\",\"includeCompanyName\":false,\"selectedTextOrientationSetting\":\"right\"}"
             },
             "componentName" : "forceCommunity:customizableUserProfileMenu",
@@ -288,7 +288,7 @@
               "buttonText" : "Log in",
               "buttonTextColor" : "",
               "buttonTextHoverColor" : "",
-              "customizableUserProfileMenuEditor" : "Default_User_Profile_Menu",
+              "customizableUserProfileMenuEditor" : "",
               "menuStyleSettings" : "{\"selectedMenuStyleSetting\":\"iconOnly\",\"selectedIconSetting\":\"userAvatar\",\"includeCompanyName\":false,\"selectedTextOrientationSetting\":\"right\"}"
             },
             "componentName" : "forceCommunity:customizableUserProfileMenu",
