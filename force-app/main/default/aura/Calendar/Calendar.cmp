@@ -74,8 +74,8 @@
             </lightning:layoutItem>
         </lightning:layout>
             <lightning:card variant="Narrow" title="Select Month to View" class="slds-size_small slds-theme_default slds-text-align_center slds-container_center">
-                <lightning:input placeholder="{!v.currentMonth}" pattern="[0-9]{1,2}" type="text" aura:id="monthInput" label="Enter Month to View"/>
-                <lightning:input placeholder="{!v.currentYear}" pattern="[0-9]{4}" type="text" aura:id="yearInput" label="Enter Year to View"/>
+                <lightning:input placeholder="{!v.currentMonth}" pattern="^([1-9]|1[012])$" type="text" aura:id="monthInput" label="Enter Month to View" required="true"/>
+                <lightning:input placeholder="{!v.currentYear}" pattern="[0-9]{4}" type="text" aura:id="yearInput" label="Enter Year to View" required="true"/>
                 <lightning:button label="Update Calendar" onclick="{!c.handleCalendarButton}"/>
             </lightning:card>
 </aura:component>	
