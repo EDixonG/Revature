@@ -2,11 +2,13 @@
     <aura:attribute name="eventList" type="CalanderClass"/>
     <aura:attribute name="currentMonth" type="Integer"/>
     <aura:attribute name="currentYear" type="Integer"/>
+    <aura:attribute name="selectedYear" type="Integer"/>
+    <aura:attribute name="monthName" type="String"/>
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
-    <!--lightning:card class="slds-theme_default slds-text-align_center">
-        <lightning:formattedText class="slds-text-heading_medium" value="{!v.month}"/>
-    </lightning:card-->
+    <lightning:card class="slds-theme_default slds-text-align_center">
+        <lightning:formattedText class="slds-text-heading_medium" value="{!v.monthName + ' - ' +v.selectedYear}"/>
+    </lightning:card>
         <lightning:layout horizontalAlign="space" class="c-container slds-grid">
             <lightning:layoutItem class="slds-col slds-size_1-of-7">
                 <div class="custom-box">Sunday</div>
@@ -72,8 +74,8 @@
             </lightning:layoutItem>
         </lightning:layout>
             <lightning:card variant="Narrow" title="Select Month to View" class="slds-size_small slds-theme_default slds-text-align_center slds-container_center">
-                <lightning:input placeholder="{!v.currentMonth}" type="number" aura:id="monthInput" label="Enter Month to View"/>
-                <lightning:input placeholder="{!v.currentYear}" type="number" aura:id="yearInput" label="Enter Year to View"/>
+                <lightning:input placeholder="{!v.currentMonth}" pattern="[0-9]{1,2}" type="text" aura:id="monthInput" label="Enter Month to View"/>
+                <lightning:input placeholder="{!v.currentYear}" pattern="[0-9]{4}" type="text" aura:id="yearInput" label="Enter Year to View"/>
                 <lightning:button label="Update Calendar" onclick="{!c.handleCalendarButton}"/>
             </lightning:card>
 </aura:component>	
