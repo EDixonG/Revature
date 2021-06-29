@@ -38,11 +38,7 @@ public without sharing class OrderController {
             
             insert products;
             
-             //If Custom_Order has records it will delete them, that way we can start with a fresh batch as dummy data
-           List<Custom_Order__c> deleteCurrent2 = [SELECT Name FROM Custom_Order__c];
-           if(!(deleteCurrent2 == null)){
-            	delete deleteCurrent2;
-            }
+            /*
             
             //creating Custom_Order__c records as dummy dat
             List<Custom_Order__c> orders = new List<Custom_Order__c>();
@@ -61,7 +57,7 @@ public without sharing class OrderController {
             
             insert orders;
             
-            
+            */
             
        
             

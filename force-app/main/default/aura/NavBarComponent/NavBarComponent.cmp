@@ -10,13 +10,16 @@
                 <c:OrderListComponent/>
             </lightning:tab>
             <lightning:tab label="Supply Orders" id="three">
-                Supply Order Component Goes Here
+                <c:SupplyOrdersForm/>
             </lightning:tab>
-            <lightning:tab label="Products" id="four">
+            <lightning:tab label="New Order" id="four">
+                <c:NewOrderForm/>
+            </lightning:tab>
+            <lightning:tab label="Products" id="five">
                 Product Component Goes Here!
             </lightning:tab>
             <div style="background-color: #87CEFA;  border-radius: 25px;" align="center">
-                <lightning:tab label="Contact Us" id="five">
+                <lightning:tab label="Contact Us" id="six">
                     
                     <h1 style="color: white; text-align: center; font-family: Helvetica; font-size: 50px"><b>Contact Us</b></h1>
                     <br/>
