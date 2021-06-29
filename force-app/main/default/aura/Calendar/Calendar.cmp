@@ -6,9 +6,11 @@
     <aura:attribute name="monthName" type="String"/>
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
-    <lightning:card class="slds-theme_default slds-text-align_center">
-        <lightning:formattedText class="slds-text-heading_medium" value="{!v.monthName + ' - ' +v.selectedYear}"/>
-    </lightning:card>
+    <div class="slds-card">
+        <lightning:card class="slds-card__footer slds-theme_default slds-text-align_center">
+            <lightning:formattedText class="slds-text-heading_medium" value="{!v.monthName + ' - ' +v.selectedYear}"/>
+        </lightning:card>
+    </div>
         <lightning:layout horizontalAlign="space" class="c-container slds-grid">
             <lightning:layoutItem class="slds-col slds-size_1-of-7">
                 <div class="custom-box">Sunday</div>
