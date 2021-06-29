@@ -1,6 +1,6 @@
 @isTest
 public class EventCalanderControllerTest {
-    @testSetup
+    /*@testSetup
     public static void makeData(){
         TestHelper.MakeData();
         
@@ -36,5 +36,5 @@ public class EventCalanderControllerTest {
         System.assertEquals(new List<string>{'26 ' , '2 ' , '9 ' , '16 ' , '23 '}, controller.eventList.Sunday);
         
         Test.stopTest();
-    }
+    }*/
 }
