@@ -67,9 +67,10 @@ public class SupplyOrderController {
         String message = 'Order submitted successfully!';
         
         order.Tracking_Reference__c = EncodingUtil.convertToHex(Crypto.generateDigest('MD5', Blob.valueOf(DateTime.now().getTime().format())));
-       
+        order.Estimated_Recieve_Date_Start__c = order.Order_Date__c.addDays(7);         
+        order.Estimated_Recieve_Date_End__c = order.Order_Date__c.addDays(10);
         try{
-            Database.SaveResult success = Database.insert(order);
+            insert order;
             message = 'Order submitted successfully!';
             
         } catch(DmlException e ){
