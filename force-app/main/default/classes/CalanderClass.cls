@@ -83,13 +83,13 @@ public with sharing class CalanderClass {
             for (Event eventToAdd : events){
                 
                 if (date.newinstance(eventToAdd.StartDateTime.year(), eventToAdd.StartDateTime.month(), eventToAdd.StartDateTime.day() + 1) == dateToView) {
-                    stringToAdd += 'Order: ' + eventToAdd.WhatId + ' Estimated start: ' + eventToAdd.ActivityDateTime.format('HH:mm');
+                    stringToAdd += 'Order: ' + eventToAdd.WhatId + ' Estimated start: ' + eventToAdd.StartDateTime.format('HH:mm');
                 }
             }
             // did is seperate loop to order starting first ending last
             for (Event eventToAdd : events){
                 if (date.newinstance(eventToAdd.EndDateTime.year(), eventToAdd.EndDateTime.month(), eventToAdd.EndDateTime.day() + 1) == dateToView) {
-                    stringToAdd += 'Order: ' + eventToAdd.WhatId + ' Estimated End: ' + eventToAdd.ActivityDateTime.format('HH:mm');
+                    stringToAdd += 'Order: ' + eventToAdd.WhatId + ' Estimated End: ' + eventToAdd.EndDateTime.format('HH:mm');
                 }
             }
             //System.debug(stringToAdd + 'bob');
