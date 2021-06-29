@@ -13,7 +13,7 @@ public without sharing class OrderController {
                 throw new AuraHandledException('You do not have access to this Object');
                 
             }
-            
+            /*
             //If Product2 has records it will delete them, that way we can start with a fresh batch as dummy data
             List<Product2> deleteCurrent = [SELECT Name FROM Product2];
             if(!(deleteCurrent == null)){
@@ -37,7 +37,7 @@ public without sharing class OrderController {
             }
             
             insert products;
-            
+            */
             /*
             
             //creating Custom_Order__c records as dummy dat
