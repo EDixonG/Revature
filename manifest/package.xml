@@ -20,10 +20,12 @@
         <members>*</members>
         <name>ApexTestSuite</name>
     </types>
+    
     <types>
         <members>*</members>
         <name>ApexTrigger</name>
     </types>
+    
     <types>
         <members>*</members>
         <name>AuraDefinitionBundle</name>
@@ -87,7 +89,7 @@
     </types>-->
     <types>
       <!--<members>User</members>-->
-      <members>Product2</members>
+      <!--<members>Product2</members>-->
       <members>PriceBook2</members>
       <members>PriceBookEntry</members>
       <members>*</members>
@@ -113,10 +115,12 @@
         <members>*</members>
         <name>CustomTab</name>
     </types>
+    <!--
     <types>
         <members>*</members>
         <name>Portal</name>
     </types>
+    -->
     <types>
         <members>*</members>
         <name>Document</name>

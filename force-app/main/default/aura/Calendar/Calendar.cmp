@@ -80,4 +80,4 @@
                 <lightning:input placeholder="{!v.currentYear}" pattern="[0-9]{4}" type="text" aura:id="yearInput" label="Enter Year to View" required="true"/>
                 <lightning:button label="Update Calendar" onclick="{!c.handleCalendarButton}"/>
             </lightning:card>
-</aura:component>	
+</aura:component>

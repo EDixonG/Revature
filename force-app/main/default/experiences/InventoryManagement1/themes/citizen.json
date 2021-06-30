@@ -125,7 +125,7 @@
             "componentAttributes" : {
               "navAlignment" : "right",
               "navItemThreshold" : 5,
-              "navigationMenuEditorRefresh" : ""
+              "navigationMenuEditorRefresh" : "Default_Navigation"
             },
             "componentName" : "forceCommunity:themeNav",
             "id" : "95c64fd3-0043-4ed8-99d9-11a69924efdf",
@@ -242,8 +242,8 @@
       "isHeaderPinned" : false,
       "isHeroUnderHeader" : true,
       "isPageWidthFixed" : true,
-      "showHeader" : true,
-      "showHero" : true
+      "showHeader" : false,
+      "showHero" : false
     },
     "componentName" : "siteforce:themeLayoutStarter",
     "id" : "2d95a15e-a4e8-43f4-9bfd-2400ed4b3da5",
@@ -330,7 +330,7 @@
             "componentAttributes" : {
               "navAlignment" : "right",
               "navItemThreshold" : 5,
-              "navigationMenuEditorRefresh" : ""
+              "navigationMenuEditorRefresh" : "Default_Navigation"
             },
             "componentName" : "forceCommunity:themeNav",
             "id" : "33850952-3130-49dd-92d4-d70dd8ef57fe",

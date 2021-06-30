@@ -40,33 +40,6 @@
       "componentName" : "forceCommunity:section",
       "id" : "529628ef-e181-488c-bd4a-50f52fa03652",
       "regions" : [ {
-        "components" : [ {
-          "componentAttributes" : {
-            "recordId" : "{!CurrentUser.accountId}"
-          },
-          "componentName" : "forceCommunity:recordHeadline",
-          "id" : "bd8fe3e7-302d-42b4-a6ca-71958e16e165",
-          "renderPriority" : "NEUTRAL",
-          "renditionMap" : { },
-          "type" : "component"
-        }, {
-          "componentAttributes" : {
-            "detailsTabLabel" : "Details",
-            "discussionsTabLabel" : "Feed",
-            "recordId" : "{!CurrentUser.accountId}",
-            "relatedTabLabel" : "Related",
-            "tab1Type" : "details",
-            "tab2Type" : "related",
-            "tab3Type" : "chatter",
-            "tab4Type" : "none",
-            "timelineTabLabel" : "Activity"
-          },
-          "componentName" : "forceCommunity:recordHomeTabs",
-          "id" : "9620ac16-dff5-44a4-889d-bd89b6b3192a",
-          "renderPriority" : "NEUTRAL",
-          "renditionMap" : { },
-          "type" : "component"
-        } ],
         "id" : "3893752a-e919-4653-9fde-db64cd090f53",
         "regionLabel" : "column 1",
         "regionName" : "col1",
