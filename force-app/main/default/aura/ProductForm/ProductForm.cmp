@@ -1,0 +1,16 @@
+<aura:component controller="ProductFormApexController">
+     <!-- attributes -->
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    
+    <!-- page components-->
+    <div style="height:600px;">
+    <lightning:datatable
+                keyField="id"
+                data="{! v.data }"
+                columns="{! v.columns }"
+                         hideCheckboxColumn="true"/></div>
+</aura:component>

@@ -1,0 +1,16 @@
+<aura:component controller="ProductOutOfStockApexController">
+     <!-- attributes -->
+    <aura:attribute name="stock" type="Object"/>
+    <aura:attribute name="stockColumns" type="List"/>
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    
+    <!-- page components-->
+    <div style="height:600px">
+    <lightning:datatable
+                keyField="id"
+                data="{! v.stock }"
+                columns="{! v.stockColumns }"
+                         hideCheckboxColumn="true"/></div>
+</aura:component>
