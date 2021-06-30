@@ -21,10 +21,13 @@ public class NewOrderFormController {
         
         order.RecordTypeId = Schema.SObjectType.Custom_Order__c.getRecordTypeInfosByName().get('Outbound Order').getRecordTypeId();
         order.Order_Status__c = 'pending';
+        order.Estimated_Recieve_Date_Start__c = order.Order_Date__c.addDays(7);         
+        order.Estimated_Recieve_Date_End__c = order.Order_Date__c.addDays(10);
+       
         //order.Contact__c = [SELECT Name FROM Contact WHERE Name =: UserInfo.getName() LIMIT 1].id;
       
         try{
-            Database.SaveResult success = Database.insert(order);
+            insert order;
             message = 'Order submitted successfully!';
             
         } catch(DmlException e ){

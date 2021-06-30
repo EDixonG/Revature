@@ -4,6 +4,14 @@
   "id" : "dffd703f-6280-4f97-81ed-f95cfcfa1eab",
   "label" : "Home",
   "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:NavBarComponent",
+      "id" : "5db3b465-07da-4970-b82c-955dd6e069db",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
     "id" : "1655b05a-c5eb-455b-8818-715e68be3994",
     "regionName" : "header",
     "type" : "region"

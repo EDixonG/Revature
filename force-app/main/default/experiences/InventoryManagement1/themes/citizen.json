@@ -242,8 +242,8 @@
       "isHeaderPinned" : false,
       "isHeroUnderHeader" : true,
       "isPageWidthFixed" : true,
-      "showHeader" : true,
-      "showHero" : true
+      "showHeader" : false,
+      "showHero" : false
     },
     "componentName" : "siteforce:themeLayoutStarter",
     "id" : "2d95a15e-a4e8-43f4-9bfd-2400ed4b3da5",

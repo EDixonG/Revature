@@ -9,7 +9,7 @@
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     
     
-    <div class="slds-grid slds-gutters">
+    <div style="border: 10px solid #AFEEEE; border-radius: 25px" class="slds-grid slds-gutters">
         <div class="slds-col  slds-align_absolute-center">
             <lightning:card title="Place Order">
                 <div class="slds-p-around_medium">
