@@ -1,6 +1,6 @@
 .THIS.c-container {
     border: 1px solid #d8dde6;
-    margin: 10px 0 20px 0;
+    margin: 0 0 20px 0;
 }
 .THIS .large {
     height: 100px;
@@ -10,7 +10,7 @@
 }
 .THIS .custom-box {
     text-align: center;
-    background-color: #f4f6f9;
+    background-color: #96c4ff;
     padding: 1rem;
     border: 1px solid #000000;
 }
@@ -18,10 +18,17 @@
     text-align: start;
     width: 100%;
     height: 200px;
-    background-color: #f4f6f9;
+    background-color: #b4d5ff;
     padding: 1rem;
     border: 1px solid #000000;
 }
 .THIS .center-card {
     max-width: 30%;
+}
+.THIS .slds-card {
+    margin-bottom: 0;
+    background-color: #7090b8!important;
+}
+.THIS .slds-card__footer {
+    background-color: #7090b8!important;
 }
